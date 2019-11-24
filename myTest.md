@@ -30,6 +30,11 @@ Unicode is supported. ☺
 - <kbd>Cmd+Shift+N</kbd> - Duplicate.
 
 [//]:test
+[//]:test
+[//]::Meyer
+[/]:test
+[/]:Meyer
+[/]:een
 
 An h2 header
 ------------
