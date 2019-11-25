@@ -120,7 +120,7 @@ Scriptlines start with:
 #... Command
 + plus
 - minus
-
+< direkt ein
 **** DIFF
 +++ DIFF
 
