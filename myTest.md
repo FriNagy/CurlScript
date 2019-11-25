@@ -104,8 +104,46 @@ for i in range(10):
     print(i)
 ~~~
 
+und jetzt das gleiche mit diff
 
+~~~diff cps
 
+Scriptlines start with:
+:... Label
+::   goto 
+>   Ausgabe 
+>>   Ausgabe writeln
+!>  File-Aus
+!<  Eingabe ( File o. Messagebox)
+??  IF oder
+?!  IFNOT
+#... Command
++ plus
+- minus
+
+**** DIFF
++++ DIFF
+
+#include mypass.cpo
+
+%HEUTE Sunday
+
+> Hello! on (%COMPUTERNAME%)
+>>!
+
+?? (%USERNAME = "Frigyes") ::EEN +1 ::UNDEF
+>> also jemand andere
+:: ENDE
+:EEN
+>> SZia Frigyes, hogy vagy
+:UNDEF
+!> temp.pdf < (%tmp)\nagy\test.vor nolf cpin,850
+:) curl -K sss
+!< .\defout.txt 
+:(
+exit 7
+
+~~~
 ### An h3 header ###
 
 Now a nested list:
