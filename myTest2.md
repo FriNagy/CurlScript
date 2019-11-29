@@ -85,9 +85,9 @@ ctx.fillRect(0, 0, 80, 100);
 
 ~~~
 curl -s -S -k -X POST httpS://textbelt.com/text \
-    --data-urlencode phone='+4366488250150' \
+    --data-urlencode phone='+43664880150' \
     --data-urlencode "message=Hallo! wollte nur schönen Tag wünschen!" \
-    -d key=b02ed54a4991de0ff707267ccc6d3faec24e94c6rbIjmVAmeDztlxfgR24uwf6He -o step1.txt 2>lasterr.txt 
+    -d key=my-geheim-key -o step1.txt 2>lasterr.txt 
 ?? :(
 ~~~
 
