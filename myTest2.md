@@ -1,28 +1,63 @@
 # Textbelt
 
-   *CurlScript,  Sende SMS mit https://textbelt.com/* 
+*CurlScript,  Sende SMS mit https://textbelt.com/* 
 
-curl starten mit Parameter ... , Ausgabe nach step1.txt, stderr nach lasterr.txt
-mit -s silent -S aber Fehlermeldungen -k https ohne zert. erlauben
+minimalistisches Script zum senden von SMS Textnachrichten 
+
+zuerst estellen wir die sende Datei:
+
+``` !> sendmee.txt 
+ --data-urlencode phone='(%%1)'
+ --data-urlencode "message=(%%i %%2)"
+  -d key=b02ed54a4991de0ff707267ccc6d3faec24e94c6rbIjmVAmeDztlxfgR24uwf6He
+```
+
+dann die Steurungsdatei für Curl
+
+``` !> curlin.txt @run
+-k
+--host https://textbelt.com/text
+--out  backfromcurl.txt
+```
+
+nach dem start lesen wir die Ausgabedatei, und weisen zu unsere Variablen zu
+
+    !< backfromcurl.txt "success":, "quotaRemaining":} "error":""
+
+also wir haben jetzt 3 Variablen (sehen zwar recht ungewöhnlich aus)
+
+- "success":,
+- "quotaRemaining":}
+- "error":""
+
+   
 
 
-       <style="color:#000;background-color:#ecf0f1;">
-      <style="color:#000;background-color:#ecf0f1;">
-     <style="color:#000;background-color:#ecf0f1;">
-<dl style="color:#fff;background-color:#34495e;border: 3px solid;border-color: #34495e #34495e #34495e #34495e;">
-<h2>SMS Senden</h2>
-minimalistisches Script zum senden von Textnachrichten siehe: https://textbelt.com/
-<dl style="color:#000;background-color:#ecf0f1;">
-  <dt> Start:</dt>
-  <dd> Is something people use sometimes.</dd>
-       <dt> Markdown in HTML</dt>
-  <dt> Definition list</dt>
-  <dd> Is something people use sometimes.</dd>
-  <dt> Markdown in HTML</dt>
-  <dd> Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
- </dl>
-</dl>
-</style>
+!>> sms.log am: (%%d) (%%z)  Tel.Nr: (%%1) Text: (%%2) 
+
+>> 
+>> Gut gemacht ...  
+>> 
+>> es bleiben noch:  (%%v"quotaRemaining":}) freie SMS
+
+?!  "quotaRemaining":}    10   eof
+
+>> Leider nun mehr 10 Freie SMS
+>> sende SMS to Admin 
+
+!> sendmee.txt 
+
+ --data-urlencode phone='+4366488250150'
+ --data-urlencode "Hey Admin! nun mehr 10 Freie SMS bei Textbelt! bitte verl├ñngern..."
+ -d key=b02ed54a4991de0ff707267ccc6d3faec24e94c6rbIjmVAmeDztlxfgR24uwf6He
+
+<x> curl -k -s -S -k -X POST https://textbelt.com/text -K sendmee.txt -o stepl.txt
+
+?? eof 
+
+
+?? writemee
+
 
 ``` 
 
