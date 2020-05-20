@@ -30,15 +30,20 @@ also wir haben jetzt 3 Variablen (sehen zwar recht ungewöhnlich aus)
 - "quotaRemaining":}
 - "error":""
 
-   
+wir fragen zuerst succes ab
+    ? "success":, = 0 :gutgemacht + :keineantwort
+ 
+ wenn Null war alles OK,
+ 
 
+:gutgemacht
 
 !>> sms.log am: (%%d) (%%z)  Tel.Nr: (%%1) Text: (%%2) 
 
 >> 
 >> Gut gemacht ...  
 >> 
->> es bleiben noch:  (%%v"quotaRemaining":}) freie SMS
+>> es bleiben noch:  (%"quotaRemaining":}) freie SMS
 
 ?!  "quotaRemaining":}    10   eof
 
