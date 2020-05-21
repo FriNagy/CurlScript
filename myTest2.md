@@ -38,6 +38,22 @@ wir fragen zuerst succes ab
  
 [//]:# This actually is the most platform independent comment)
 
+und ein xml:
+
+~~~ xml trim nolf 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ses="https://finanzonline.bmf.gv.at/fon/ws/session">
+ <soapenv:Header/>
+   <soapenv:Body>
+      <ses:loginRequest>
+         <ses:tid>(%tid       )</ses:tid>
+         <ses:benid>(%benid   )</ses:benid>
+         <ses:pin>(%invo1)(%pin)</ses:pin>
+         <ses:herstellerid>(%herrid)</ses:herstellerid>
+      </ses:loginRequest>
+   </soapenv:Body>
+ </soapenv:Envelope>
+~~~
+
 
 
 <!-- Hallo Frigyes --->
