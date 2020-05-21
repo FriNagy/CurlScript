@@ -6,10 +6,10 @@ minimalistisches Script zum senden von SMS Textnachrichten
 
 zuerst estellen wir die sende Datei:
 
-``` !> sendmee.txt 
- --data-urlencode phone='(%%1)'
+``` txt sendmee.txt 
+ --data-urlencode phone='(%1)'
  --data-urlencode "message=(%%i %%2)"
-  -d key=b02ed54a4991de0ff707267ccc6d3faec24e94c6rbIjmVAmeDztlxfgR24uwf6He
+  -d key=b02ed54a4991de0ff70726cc6d3faec24e94c6rbIjmVAmeDztlxfgR24uwf6He
 ```
 
 dann die Steurungsdatei für Curl
@@ -26,12 +26,9 @@ nach dem start lesen wir die Ausgabedatei, und weisen zu unsere Variablen zu
 
 also wir haben jetzt 3 Variablen (sehen zwar recht ungewöhnlich aus)
 
-- "success":,
-- "quotaRemaining":}
-- "error":""
+- `"success":,` `"quotaRemaining":}` `"error":""`
 
-wir fragen zuerst succes ab
-    ? "success":, = 0 :gutgemacht + :keineantwort
+\if `"success":,` = true :gesendet :smsfehler :progfehler
  
  <span style="font-family:Papyrus; font-size:4em;">VERLIEBT!</span>
  
