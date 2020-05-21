@@ -33,6 +33,7 @@ also wir haben jetzt 3 Variablen (sehen zwar recht ungewöhnlich aus)
 wir fragen zuerst succes ab
     ? "success":, = 0 :gutgemacht + :keineantwort
  
+ <span style="font-family:Papyrus; font-size:4em;">VERLIEBT!</span>
  
 []:# (This actually is the most platform independent comment)
  
