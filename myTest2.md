@@ -33,6 +33,17 @@ also wir haben jetzt 3 Variablen (sehen zwar recht ungewöhnlich aus)
 wir fragen zuerst succes ab
     ? "success":, = 0 :gutgemacht + :keineantwort
  
+ 
+[]:# (This actually is the most platform independent comment)
+ 
+[//]:# This actually is the most platform independent comment)
+
+
+
+<!-- Hallo Frigyes --->
+
+
+ 
  wenn Null war alles OK,
  
 
