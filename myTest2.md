@@ -26,9 +26,9 @@ php
   "lines": [ 
  ?! test dfsd (%hello%)
   { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" } // und sonst
-?! (%CO2) :LASTLINE  // und sonst lasses
+? (%CO2) :LASTLINE  // und sonst lasses
  ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
-?! (%CO3) :LASTLINE
+? (%CO3) :LASTLINE :+hello
  ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
 ?! (%CO4) :LASTLINE
  ,{ "taxCode": "(%CO4)", "quantity": 1, "amount": (%AMO4), "description": "(%DESC4)" }
