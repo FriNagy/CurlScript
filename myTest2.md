@@ -52,7 +52,28 @@ und ein xml:
  </soapenv:Envelope>
 ~~~
 
+oder eben ein JSON
 
+~~~ json <!-- !> json.tmp NOLF NOLF //////////////////////////////////
+
+{ "type": "SalesOrder", 
+  "date": "(%DOCdate)", 
+  "customerCode": "(%customerCode)",
+  "addresses": { 
+  "shipTo": {"line1":"(%TOLINE1)","city": "(%TOCITY)","region": "(%toregion)","country": "US","postalCode": "(%TOPOSTALCODE)"},
+  "shipFrom": { "line1": "(%FROM,4)", "city": "(%FROM,3)", "region": "(%FROM,1)", "country": "US", "postalCode": "(%FROM,2)" } }, 
+  "lines": [ 
+  { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" }
+?! (%CO2) :LASTLINE
+ ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
+?! (%CO3) :LASTLINE
+ ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
+?! (%CO4) :LASTLINE
+ ,{ "taxCode": "(%CO4)", "quantity": 1, "amount": (%AMO4), "description": "(%DESC4)" }
+:LASTlINE
+]}
+
+~~~
 
 <!-- Hallo Frigyes --->
 
