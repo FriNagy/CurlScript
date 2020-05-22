@@ -4,6 +4,15 @@
 
 minimalistisches Script zum senden von SMS Textnachrichten 
 
+
+<nav style="background-color:gray;border:2px solid DodgerBlue;">
+<a href="/html/"> ___HTML</a> |
+<a href="/css/">___CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/jquery/">jQuery</a>
+</nav>
+
+
 zuerst estellen wir die sende Datei:
 
 ``` txt sendmee.txt 
