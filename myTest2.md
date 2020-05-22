@@ -34,7 +34,7 @@ ifnot (%CO3) goto LASTLINE gosub hello :((
  ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
 ?! (%CO4) :LASTLINE
  ,{ "taxCode": "(%CO4)", "quantity": 1, "amount": (%AMO4), "description": "(%DESC4)" }
-:LASTlINE
+!:LASTlINE
 ]}
 
 ```
