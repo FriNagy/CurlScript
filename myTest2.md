@@ -13,13 +13,63 @@ minimalistisches Script zum senden von SMS Textnachrichten
 </nav>
 
 
+```powershell
+
+php
+
+{ "type": "SalesOrder", 
+  "date": "(%DOCdate)", 
+  "customerCode": "(%customerCode)",
+  "addresses": { 
+  "shipTo": {"line1":"(%TOLINE1)","city": "(%TOCITY)","region": "(%toregion)","country": "US","postalCode": "(%TOPOSTALCODE)"},
+  "shipFrom": { "line1": "(%FROM,4)", "city": "(%FROM,3)", "region": "(%FROM,1)", "country": "US", "postalCode": "(%FROM,2)" } }, 
+  "lines": [ 
+ ?! test dfsd (%hello%)
+  { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" } // und sonst
+?! (%CO2) :LASTLINE  // und sonst lasses
+ ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
+?! (%CO3) :LASTLINE
+ ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
+?! (%CO4) :LASTLINE
+ ,{ "taxCode": "(%CO4)", "quantity": 1, "amount": (%AMO4), "description": "(%DESC4)" }
+:LASTlINE
+]}
+
+```
+
+```diff
+
+css
+
+{ "type": "SalesOrder", 
+  "date": "(%DOCdate%)", 
+  "customerCode": "(%customerCode)",
+  "addresses": { 
+  "shipTo": {"line1":"(%TOLINE1)","city": "(%TOCITY)","region": "(%toregion)","country": "US","postalCode": "(%TOPOSTALCODE)"},
+  ***  "shipFrom": { "line1": "(%FROM,4)", "city": "(%FROM,3)", "region": "(%FROM,1)", "country": "US", "postalCode": "(%FROM,2)" } }, 
+  "lines": [ 
+  { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" }
++?! (%CO2) :LASTLINE
+ ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
++?! (%CO3) :+LASTLINE + :((
+ ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
++?! (%CO4) :LASTLINE
+ ,{ "taxCode": "(%CO4)", "quantity": 1, "amount": (%AMO4), "description": "(%DESC4)" }
+-:LASTlINE
+]}
+
+```
+
+
+
+
 zuerst estellen wir die sende Datei:
 
-``` txt sendmee.txt 
+<code> txt sendmee.txt 
  --data-urlencode phone='(%1)'
  --data-urlencode "message=(%%i %%2)"
   -d key=b02ed54a4991de0ff70726cc6d3faec24e94c6rbIjmVAmeDztlxfgR24uwf6He
-```
+<\code>
 
 dann die Steurungsdatei für Curl
 
@@ -63,7 +113,7 @@ und ein xml:
 
 oder eben ein JSON
 
-~~~ javascript <!-- !> json.tmp NOLF NOLF //////////////////////////////////
+~~~ powershell <!-- !> json.tmp NOLF NOLF //////////////////////////////////
 
 { "type": "SalesOrder", 
   "date": "(%DOCdate)", 
@@ -73,7 +123,7 @@ oder eben ein JSON
   "shipFrom": { "line1": "(%FROM,4)", "city": "(%FROM,3)", "region": "(%FROM,1)", "country": "US", "postalCode": "(%FROM,2)" } }, 
   "lines": [ 
   { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" }
-?! (%CO2) :LASTLINE
+?! (%CO2) :LASTLINE // wenn kein zweites code, > lasses
  ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
 ?! (%CO3) :LASTLINE
  ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
