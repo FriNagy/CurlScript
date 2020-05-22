@@ -54,7 +54,7 @@ und ein xml:
 
 oder eben ein JSON
 
-~~~ json <!-- !> json.tmp NOLF NOLF //////////////////////////////////
+~~~ javascript <!-- !> json.tmp NOLF NOLF //////////////////////////////////
 
 { "type": "SalesOrder", 
   "date": "(%DOCdate)", 
@@ -76,6 +76,18 @@ oder eben ein JSON
 ~~~
 
 <!-- Hallo Frigyes --->
+
+
+
+curl -K cmdlpars.txt  // wir starten curl. alle Parameter sind in cmdlpars.txt  
+
+!< back.txt %am="date":" %tax="totalTax":^, %amount="totalAmount":^, %nont="nonTaxableAmount":^,
+
+<< Total Tax: (%tax)\n\n\nvon: (%Amount)\nnonTaxable: (%nont)\n\nin Schein: (%oldwert)  (Kunde: (%KUNUM))
+
+!> .\getan.txt cpout850 /////////////
+
+(%tax)
 
 
  
