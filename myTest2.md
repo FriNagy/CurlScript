@@ -17,8 +17,10 @@ minimalistisches Script zum senden von SMS Textnachrichten
 
 php
 
-{ "type": "SalesOrder", 
-  "date": "(%DOCdate)", 
+{
+  { "taxCode": (%CO1), "quantity": 1, "amount": (%AMO1), "description": (%DESC1) } // und sonst
+"type": "SalesOrder", 
+  "date": "(%DOCdate)", eras move
   "customerCode": "(%customerCode)",
   "addresses": { 
   "shipTo": {"line1":"(%TOLINE1)","city": "(%TOCITY)","region": "(%toregion)","country": "US","postalCode": "(%TOPOSTALCODE)"},
@@ -26,9 +28,9 @@ php
   "lines": [ 
  ?! test dfsd (%hello%)
   { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" } // und sonst
-? (%CO2) :LASTLINE  // und sonst lasses
+if (%CO2) :LASTLINE  // und sonst lasses
  ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
-? (%CO3) :LASTLINE :+hello
+ifnot (%CO3) :LASTLINE :+hello
  ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
 ?! (%CO4) :LASTLINE
  ,{ "taxCode": "(%CO4)", "quantity": 1, "amount": (%AMO4), "description": "(%DESC4)" }
