@@ -14,15 +14,14 @@ minimalistisches Script zum senden von SMS Textnachrichten
 
 
 ```csharp
-
-php
-
 {
   { "taxCode": (%CO1), "quantity": 1, "amount": (%AMO1), "description": (%DESC1) } // und sonst
 "type": "SalesOrder", 
   "date": "(%DOCdate)", eras move
   "customerCode": "(%customerCode)",
-  "addresses": { 
+  "addresses": { class 
+  inter sss,
+  type = ,,,;
   "shipTo": {"line1":"(%TOLINE1)","city": "(%TOCITY)","region": "(%toregion)","country": "US","postalCode": "(%TOPOSTALCODE)"},
   "shipFrom": { "line1": "(%FROM,4)", "city": "(%FROM,3)", "region": "(%FROM,1)", "country": "US", "postalCode": "(%FROM,2)" } }, 
   "lines": [ 
@@ -39,7 +38,7 @@ ifnot (%CO3) goto LASTLINE gosub hello :((
 
 ```
 
-```diff
+```json5
 
 css
 
