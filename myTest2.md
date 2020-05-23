@@ -26,7 +26,7 @@ php
   "shipTo": {"line1":"(%TOLINE1)","city": "(%TOCITY)","region": "(%toregion)","country": "US","postalCode": "(%TOPOSTALCODE)"},
   "shipFrom": { "line1": "(%FROM,4)", "city": "(%FROM,3)", "region": "(%FROM,1)", "country": "US", "postalCode": "(%FROM,2)" } }, 
   "lines": [ 
- ?! test dfsd (%hello%)
+?! test dfsd (%hello%)
   { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" } // und sonst
 if (%CO2) :LASTLINE  // und sonst lasses
  ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
@@ -34,7 +34,7 @@ ifnot (%CO3) goto LASTLINE gosub hello :((
  ,{ "taxCode": "(%CO3)", "quantity": 1, "amount": (%AMO3), "description": "(%DESC3)" }
 ?! (%CO4) :LASTLINE
  ,{ "taxCode": "(%CO4)", "quantity": 1, "amount": (%AMO4), "description": "(%DESC4)" }
-!:LASTlINE
+:LASTlINE
 ]}
 
 ```
@@ -50,7 +50,7 @@ css
   "shipTo": {"line1":"(%TOLINE1)","city": "(%TOCITY)","region": "(%toregion)","country": "US","postalCode": "(%TOPOSTALCODE)"},
   ***  "shipFrom": { "line1": "(%FROM,4)", "city": "(%FROM,3)", "region": "(%FROM,1)", "country": "US", "postalCode": "(%FROM,2)" } }, 
   "lines": [ 
-  { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" }
+@@  { "taxCode": "(%CO1)", "quantity": 1, "amount": (%AMO1), "description": "(%DESC1)" }
 +?! (%CO2) :LASTLINE
  ,{ "taxCode": "(%CO2)", "quantity": 1, "amount": (%AMO2), "description": "(%DESC2)" }
 +?! (%CO3) :+LASTLINE + :((
