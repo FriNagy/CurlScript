@@ -12,12 +12,13 @@ Es ist leicht übertrieben, diese Erweiterung als Script zu bezeichnen, aber fü
 
 ## See also
 
-For additional Windows samples, see [Windows on GitHub](http://microsoft.github.io/windows/). 
 
 ## Samples by category
 
+zum Anfangen ein einzeiler [minimal Hello World](samples/HelloWorld) 
+
+<!--
 ### App settings
-
 <table>
  <tr>
   <td><a href="Samples/Package">App package information</a></td>
@@ -25,13 +26,5 @@ For additional Windows samples, see [Windows on GitHub](http://microsoft.github.
   <td><a href="Samples/Store">Store</a></td>
  </tr>
 </table>
+-->
 
-### Audio, video, and camera
-
-<table>
- <tr>
-  <td><a href="Samples/Package">App package information</a></td>
-  <td><a href="Samples/ApplicationData">Application data</a></td>
-  <td><a href="Samples/Store">Store</a></td>
- </tr>
-</table>
