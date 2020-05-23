@@ -9,3 +9,29 @@ Das Programm "cps.exe" findet ihr in bin Ordner. Das Programm ist derzeit noch k
 
 Es ist leicht übertrieben, diese Erweiterung als Script zu bezeichnen, aber für unsere Zwecke reicht es allemal. Wir können Steuerungs-Dateien erstellen, curl mit dieser Datei und diversen Parametern starten und danach das Ergebnis auswerten und von diesen abhängig dann wieder neuen Dateien erstellen, curl bei Bedarf erneut starten und Ergebnisse zurückliefern lassen usw. bis uns das exit ...
 
+
+## See also
+
+For additional Windows samples, see [Windows on GitHub](http://microsoft.github.io/windows/). 
+
+## Samples by category
+
+### App settings
+
+<table>
+ <tr>
+  <td><a href="Samples/Package">App package information</a></td>
+  <td><a href="Samples/ApplicationData">Application data</a></td>
+  <td><a href="Samples/Store">Store</a></td>
+ </tr>
+</table>
+
+### Audio, video, and camera
+
+<table>
+ <tr>
+  <td><a href="Samples/Package">App package information</a></td>
+  <td><a href="Samples/ApplicationData">Application data</a></td>
+  <td><a href="Samples/Store">Store</a></td>
+ </tr>
+</table>
