@@ -13,7 +13,7 @@ minimalistisches Script zum senden von SMS Textnachrichten
 </nav>
 
 
-```powershell
+```csharp
 
 php
 
