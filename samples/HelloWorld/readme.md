@@ -13,9 +13,7 @@ Die Zeilenschaltung am Zeilenenende wird abgeschaltet wenn wir die Zeile mit `>~
 | ------------- |---------| 
 | writeln       | `>`     | 
 | write         | `>~`    | 
-| appendln      | `>>`    | 
-| append        | `>>~`   | 
-| write-getln   | `><`    | mit Bestätitung 
+| write-get-ln  | `><`    | mit Bestätitung 
 
 
 natürlich auch mehrzeilig, mit Unicode
@@ -30,8 +28,12 @@ aber auch mit Variablen:
 <details>
   <summary>Click to show more...</summary>
   <markdown>
-- Embedded
-  - _Markdown_
+| Befehl        | Code    |    
+| ------------- |---------| 
+| writeln       | `>`     | 
+| write         | `>~`    | 
+| appendln      | `>>`    | 
+| append        | `>>~`   | 
   </markdown>
 </details>
 
