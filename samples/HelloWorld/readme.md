@@ -5,16 +5,20 @@ Hello World Programm (kürzer geht kaum)
      > Hello World...
     
  
-mit `>` am **Zeilenanfang** wird eine Ausgabe gestartet
+mit `>` am **Zeilenanfang** wird eine Ausgabe gestartet,
 wir geben die Zeile ohne rechte Leerzeichen, mit abschliessende Zeilenschaltung aus.
-Die Zeilenschaltung am Zeilenenende wird abgeschaltet wenn wir die Zeile mit `>~` starten.
+Die Zeilenschaltung am Zeilenenende wird abgeschaltet wenn die Zeile mit `>~` startet.
 
-| Befehl        | Code    |    
+<details>
+ <summary>Click to show more...</summary>
+     
+| Befehl        | Code    | Aktion         
 | ------------- |---------| 
 | writeln       | `>`     | 
 | write         | `>~`    | 
-| write-get-ln  | `><`    | mit Bestätitung 
+| write-get-ln  | `><`    |  
 
+</details>
 
 natürlich auch mehrzeilig, mit Unicode
 
@@ -24,16 +28,12 @@ natürlich auch mehrzeilig, mit Unicode
 aber auch mit Variablen:
 
      > Hello (%USERNAME%)
-     
-<details>
+ <details>
   <summary>Click to show more...</summary>
-  <markdown>
-| Befehl        | Code    |    
-| ------------- |---------| 
-| writeln       | `>`     | 
-| write         | `>~`    | 
-| appendln      | `>>`    | 
-| append        | `>>~`   | 
+  <markdown>   
+ | Befehl        | Code    |      
+ | ------------- |---------| 
+ | writeln       | `>`     | 
+ | write         | `>~`    |        
   </markdown>
 </details>
-
