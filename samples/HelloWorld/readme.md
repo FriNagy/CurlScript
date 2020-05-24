@@ -1,4 +1,4 @@
-### Curlscript first steps
+## Curlscript first steps
 
 Hello World Programm (kürzer geht kaum)
 
@@ -10,30 +10,60 @@ wir geben die Zeile ohne rechte Leerzeichen, mit abschliessende Zeilenschaltung 
 Die Zeilenschaltung am Zeilenenende wird abgeschaltet wenn die Zeile mit `>~` startet.
 
 <details>
- <summary>Click to show more...</summary>
-     
-| Befehl        | Code    | Aktion         
+ <summary>Befehle zu direktausgabe, Click to show more...</summary>
+ <markdown>  
+      
+| Befehl        | Code    |    
 | ------------- |---------| 
 | writeln       | `>`     | 
 | write         | `>~`    | 
 | write-get-ln  | `><`    |  
+ </markdown>
+ </details>
 
-</details>
-
-natürlich auch mehrzeilig, mit Unicode
+auch mit Unicode...
+Console Codepage und Schriftart sollte natürlich unicode können 
 
      > Hello World...
      > Grüßt Euch, привет, csókolom, 你好
 
-aber auch mit Variablen:
+und mit Variablen:
 
-     > Hello (%USERNAME%)
- <details>
+     > Hello World...
+     > Grüßt Euch, привет, csókolom, 你好
+     >
+     > bin als User: (%USERNAME%) angemeldet
+     
+Starting from Windows 10 the Windows console support ANSI Escape Sequences  
+https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences  
+( HK_CU\Console\VirtualTerminalLevel muss auf 1 sein)
+
+     > Hello World...
+     > Grüßt Euch, привет, csókolom, 你好
+     >
+     > bin als User: (%USERNAME%) angemeldet
+     >               (%/27)[41m  ROT  (%/27)[47m WEISS (%/27)[42m  GRÜN  (%/27)[40m   
+     >               (%/27)[41m  ROT  (%/27)[47m WEISS (%/27)[42m  GRÜN  (%/27)[40m   
+
+
+<details>
   <summary>Click to show more...</summary>
   <markdown>   
+       
  | Befehl        | Code    |      
  | ------------- |---------| 
  | writeln       | `>`     | 
  | write         | `>~`    |        
-  </markdown>
+   </markdown>
+   
+   <details>
+  <summary>Click to show more...</summary>
+  <markdown>   
+       
+ | Befehl        | Code    |      
+ | ------------- |---------| 
+ | writeln       | `>`     | 
+ | write         | `>~`    |        
+   </markdown>
+</details>
 </details>
