@@ -9,47 +9,24 @@ Das Programm "cps.exe" findet ihr in bin Ordner. Das Programm ist derzeit noch k
 
 Es ist leicht übertrieben, diese Erweiterung als Script zu bezeichnen, aber für unsere Zwecke reicht es allemal. Wir können Steuerungs-Dateien erstellen, curl mit dieser Datei und diversen Parametern starten und danach das Ergebnis auswerten und von diesen abhängig dann wieder neuen Dateien erstellen, curl bei Bedarf erneut starten und Ergebnisse zurückliefern lassen usw. bis uns das exit, EOF, oder ein error scheidet ...
 
-<!-- Sample of code generated --> 
+
+
+
+<!-- Sample of code generated  
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="RGQ8NSYPA59FL">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
-</form>
+</form> -->
 
 ## Samples by category
 
 zum Anfangen ein Einzeiler, aber es werden mehr... [minimal Hello World](samples/HelloWorld) 
 
 
-<div id="paypal-button-container"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'rect',
-          color: 'silver',
-          layout: 'horizontal',
-          label: 'paypal',
-          tagline: true
-      },
-      createOrder: function(data, actions) {
-          return actions.order.create({
-              purchase_units: [{
-                  amount: {
-                      value: '3'
-                  }
-              }]
-          });
-      },
-      onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-              alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-      }
-  }).render('#paypal-button-container');
-</script>
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/Frigyes/3)
 
 <!--
 ### App settings
