@@ -7,7 +7,7 @@ In diesem Repo sind nur die Scripten hinterlegt, ihr benötigt zusätzlich das P
 
 Das Programm "cps.exe" findet ihr in bin Ordner. Das Programm ist derzeit noch kein open source. Wenn sich jemand an seiner mit Entwicklung beteiligen will, kann ich ihm die entsprechenden Source gerne zumailen. Derzeit sind ca. 7000 Zeilen in C++ VS2019.  
 
-Es ist leicht übertrieben, diese Erweiterung als Script zu bezeichnen, aber für unsere Zwecke reicht es allemal. Wir können Steuerungs-Dateien erstellen, curl mit dieser Datei und diversen Parametern starten und danach das Ergebnis auswerten und von diesen abhängig dann wieder neuen Dateien erstellen, curl bei Bedarf erneut starten und Ergebnisse zurückliefern lassen usw. bis uns das exit, EOF, oder ein error scheidet ...
+Es ist leicht übertrieben, diese Tool als Script zu bezeichnen, aber für unsere Zwecke reicht es allemal. Wir können Steuerungs-Dateien erstellen, curl (oder was anderes) mit dieser Datei und diversen Parametern starten und danach das Ergebnis auswerten und von diesen abhängig dann wieder neuen Dateien erstellen, curl bei Bedarf erneut starten und Ergebnisse zurückliefern lassen usw. bis uns das exit, EOF, oder ein error scheidet ...
 
 
 
@@ -24,7 +24,8 @@ Es ist leicht übertrieben, diese Erweiterung als Script zu bezeichnen, aber fü
 
 zum Anfangen ein Einzeiler, aber es werden mehr... [minimal Hello World](samples/HelloWorld) 
 
-
+<br>
+<br>
 
 [![paypal](samples/donate188.png)](https://www.paypal.me/Frigyes/3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [![paypal](samples/donate236.png)](https://www.paypal.me/Frigyes/7)
 
