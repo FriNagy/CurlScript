@@ -26,7 +26,7 @@ zum Anfangen ein Einzeiler, aber es werden mehr... [minimal Hello World](samples
 
 
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/Frigyes/3)   [![paypal](samples/don190.png)](https://www.paypal.me/Frigyes/3)  [![paypal](samples/don200.png)](https://www.paypal.me/Frigyes/3)
+[![paypal](samples/donate188.png)](https://www.paypal.me/Frigyes/3)   [![paypal](samples/donate236.png)](https://www.paypal.me/Frigyes/7)  [![paypal](samples/don200.png)](https://www.paypal.me/Frigyes)
 
 
 
