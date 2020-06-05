@@ -25,12 +25,12 @@ auch mit Unicode...
 Console Codepage und Schriftart sollte natürlich unicode können 
 
      > Hello World...
-     > Grüßt Euch, привет, csókolom, 你好
+     > Grüßt Euch, Привет, Csókolom, 你好
 
 und mit Variablen:
 
      > Hello World...
-     > Grüßt Euch, привет, csókolom, 你好
+     > Grüßt Euch, Привет, csókolom, 你好
      >
      > bin als User: (%USERNAME%) angemeldet
      
@@ -39,7 +39,7 @@ https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequen
 ( HK_CU\Console\VirtualTerminalLevel muss auf 1 sein)
 
      > Hello World...
-     > Grüßt Euch, привет, csókolom, 你好
+     > Grüßt Euch, Привет, csókolom, 你好
      >
      > bin als User: (%USERNAME%) angemeldet
      >               (%/27)[41m  ROT  (%/27)[47m WEISS (%/27)[42m  GRÜN  (%/27)[40m   
