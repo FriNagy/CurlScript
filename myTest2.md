@@ -4,6 +4,36 @@
 
 minimalistisches Script zum senden von SMS Textnachrichten 
 
+andere Quick-Links die ich nutze:
+
+Autohotkey  AHK_VERSION "1.1.33.02" https://github.com/Lexikos/AutoHotkey_L
+
+Rainmeter, 4.4 Beta Release - r3404  https://www.rainmeter.net/
+
+Curl
+
+IBM DB2
+
+CEF
+
+Notepad2 Version 4.2.25 http://www.flos-freeware.ch/notepad2.html
+
+SCITE
+
+
+Blatt
+
+nur in vollversion:
+
+LibXL
+
+Virtual.Print.Engine
+
+Postie
+
+
+
+
 
 <nav style="background-color:gray;border:2px solid DodgerBlue;">
 <a href="/html/"> ___HTML</a> |
