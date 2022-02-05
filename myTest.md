@@ -1,5 +1,5 @@
 # Test Markdown F.Nagy
-
+<script src="https://kit.fontawesome.com/e40298b918.js" crossorigin="anonymous"></script>
 An h1 header
 ============
 <h1><img src="https://img.fortawesome.com/349cfdf6/fa-free-logo.svg" alt="Font Awesome Free" width="50%"></h1>
