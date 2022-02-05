@@ -2,6 +2,7 @@
 
 An h1 header
 ============
+<h1><img src="https://img.fortawesome.com/349cfdf6/fa-free-logo.svg" alt="Font Awesome Free" width="50%"></h1>
 
 <i class="fa fa-motorcycle" style="font-size:60px;color:blue;"></i>
 
