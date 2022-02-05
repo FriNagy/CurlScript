@@ -3,6 +3,8 @@
 An h1 header
 ============
 
+<i class="fa fa-motorcycle" style="font-size:60px;color:blue;"></i>
+
 Paragraphs are separated by a blank line.
 
 2nd paragraph. *Italic*, **bold**, and `monospace`. 
